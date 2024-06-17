@@ -1,7 +1,7 @@
 name: Deployment Pipeline
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   Deployment:
@@ -14,8 +14,8 @@ jobs:
         id: versioning
         uses: Soumeh/Auto-Versioning@main
 
-      - id: 'auth'
-        uses: 'google-github-actions/auth@v2'
+      - id: "auth"
+        uses: "google-github-actions/auth@v2"
         with:
           credentials_json: ${{ secrets.GCP_SA_KEY }}
 
@@ -46,7 +46,3 @@ jobs:
             --region=us-central1 \
             --allow-unauthenticated \
             --port=80
-
-
-          
-      
