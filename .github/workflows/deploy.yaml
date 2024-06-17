@@ -50,7 +50,7 @@ jobs:
       - name: Deploy to gcloud run
         run: |
           gcloud run deploy portfolio-website \
-            --image=${{ secrets.DOCKERHUB_USERNAME }}/portfolio-website:${{ steps.versioning.outputs.tag }} \
+            --image=docker.io/${{ secrets.DOCKERHUB_USERNAME }}/portfolio-website:${{ steps.versioning.outputs.tag }} \
             --platform=managed \
             --region=us-central1 \
             --allow-unauthenticated
