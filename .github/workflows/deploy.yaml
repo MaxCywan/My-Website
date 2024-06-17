@@ -3,8 +3,6 @@ on:
   push:
     branches: [ main ]
 
-
-          service_account_key: ${{ secrets.GCP_SA_KEY }}
 jobs:
   Deployment:
     runs-on: ubuntu-latest
