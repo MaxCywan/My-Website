@@ -1,0 +1,22 @@
+body {
+}
+
+.Title-1 {
+    color: aliceblue;
+    color: rgb(61, 61, 61);
+}
+
+.montserrat-alternates-medium {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+ .showcase-ticket {
+    background-color: #212529;
+    color: aliceblue;
+    padding: 20px;
+ }
+ .showcase-ticket p {
+    margin: 0;
+ }
