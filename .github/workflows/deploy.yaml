@@ -44,7 +44,7 @@ jobs:
             --image=docker.io/${{ secrets.DOCKERHUB_USERNAME }}/portfolio-website:${{ steps.versioning.outputs.tag }} \
             --platform=managed \
             --region=us-central1 \
-            --allow-unauthenticated
+            --allow-unauthenticated \
             --port=80
 
 
