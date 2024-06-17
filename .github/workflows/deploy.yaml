@@ -23,7 +23,7 @@ jobs:
 
       - name: Docker Build
         run: |
-          docker build -t portfolio-website:${{ steps.versioning.outputs.tag }}
+          docker buildx build -t portfolio-website:${{ steps.versioning.outputs.tag }}
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v1
